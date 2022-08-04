@@ -10,6 +10,7 @@ module.exports = function toReadable (number) {
     13: 'thirteen',
     14: 'fourteen',
     15: 'fifteen',
+    18: 'eighteen',
     20: 'twenty',
     30: 'thirty',
     40: 'forty',
@@ -67,7 +68,7 @@ module.exports = function toReadable (number) {
     }
     numStr = numStr.slice(1);
 
-    return res += ' ' + getTwentys(+numStr);
+    return res += ' ' + toReadable(+numStr);
   }
 
   if(getException(number)) {
