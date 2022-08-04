@@ -79,5 +79,4 @@ module.exports = function toReadable (number) {
     return getTwentys(number);
   } else return getHundred(number);
 
-  return result;
 }
